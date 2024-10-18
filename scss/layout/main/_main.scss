@@ -21,6 +21,10 @@ main {
     text-align: justify;
   }
 
+  .awareness-raising {
+    color: $secondary-color;
+  }
+
   .tips {
     @include flex-between();
     gap: 2rem;
