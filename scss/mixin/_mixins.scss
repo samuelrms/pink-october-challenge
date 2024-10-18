@@ -1,0 +1,64 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin reset-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin reset-button {
+  border: none;
+  background-color: transparent;
+}
+
+@mixin reset-input {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+@mixin reset-select {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin flex-between {
+  @include flex;
+  justify-content: space-between;
+}
