@@ -1,0 +1,21 @@
+@use "../../mixin/mixins" as *;
+@use "../../abstracts/variables" as *;
+
+footer {
+  flex: 1;
+  justify-content: space-between;
+  padding: 1rem 2.375rem;
+  color: $secondary-color;
+  gap: 2rem;
+
+  .icons-social-media {
+    @include flex-row();
+    gap: 1rem;
+  }
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+}
