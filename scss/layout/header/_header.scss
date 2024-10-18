@@ -1,0 +1,53 @@
+@use "../../mixin/mixins" as *;
+@use "../../abstracts/variables" as *;
+
+header {
+  @include flex-between();
+  padding: 0 2.375rem;
+  color: $secondary-color;
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .menu {
+    @include flex-between();
+    display: flex;
+    width: 100%;
+    font-size: 1.75rem;
+    gap: 1rem;
+    margin-right: 5rem;
+
+    @media (max-width: 64rem) {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 2rem;
+    flex-direction: column;
+    padding-bottom: 1rem;
+
+    .container,
+    .menu {
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+
+  .btn-back-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    a {
+      cursor: pointer;
+      background: #000;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}
