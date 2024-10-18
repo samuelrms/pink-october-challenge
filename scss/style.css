@@ -5,7 +5,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 2.375rem;
-  color: #ffffff;
+  color: #e4eef1;
 }
 header h1 {
   font-size: 1.75rem;
@@ -47,7 +47,7 @@ header .btn-back-top {
 header .btn-back-top a {
   cursor: pointer;
   background: #000;
-  color: #fff;
+  color: #e4eef1;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -76,6 +76,9 @@ main .awareness-raising {
   gap: 4rem;
   text-align: justify;
 }
+main .awareness-raising {
+  color: #e4eef1;
+}
 main .tips {
   display: flex;
   flex-direction: row;
@@ -95,7 +98,7 @@ footer {
   flex: 1;
   justify-content: space-between;
   padding: 1rem 2.375rem;
-  color: #ffffff;
+  color: #e4eef1;
   gap: 2rem;
 }
 footer .icons-social-media {
