@@ -1,0 +1,74 @@
+@forward "abstracts/variables";
+@use "./abstracts/variables" as *;
+@use "mixin/mixins" as *;
+@use "./layout/header/header" as *;
+@use "./layout/main/main" as *;
+@use "./layout/footer/footer" as *;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  @include reset();
+  @include reset-link();
+  @include reset-button();
+  @include reset-input();
+  @include reset-select();
+  @include reset-list();
+}
+
+html,
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $background-color;
+  position: relative;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+.container {
+  @include flex;
+  width: 100%;
+}
+
+.bg-primary {
+  background-color: $background-primary-color;
+}
+
+.bg-secondary {
+  background-color: $background-secondary-color;
+}
+
+.bg-color {
+  background-color: $background-color;
+}
+
+.flex-full {
+  @include flex;
+  width: 100%;
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col {
+  @include flex-col();
+}
+
+.h-full {
+  height: 100%;
+}
